@@ -21,6 +21,7 @@ nav {
 
 nav img {
   height: 5rem;
+  padding: 0 1rem;
 }
 
 nav ul {
@@ -43,13 +44,17 @@ nav ul li {
 }
 
 main {
-    display: flex;
-    justify-items: center;
-    background-color: rgb(115,205,38) ;
-    height: 50vh;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(115, 205, 38);
+  height: 70vh;
 }
 
 main h1 {
-    color:white
+    display: inline-block;
+    padding: 0 2rem;
+    margin-top: 5rem;
+    font-size:2.5rem;
+  color: black;
 }
