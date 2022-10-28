@@ -19,9 +19,15 @@ nav {
   z-index: 5;
 }
 
-nav img {
+nav div {
   height: 5rem;
-  padding: 0 1rem;
+  margin-left: 1rem;
+  width: 300px;
+}
+
+nav div img {
+  height: 100%;
+  width: auto;
 }
 
 nav ul {
@@ -29,6 +35,8 @@ nav ul {
   justify-content: flex-end;
   align-items: center;
   list-style-type: none;
+  margin-right: 1rem;
+  width: 300px;
 }
 
 .title {
@@ -43,6 +51,13 @@ nav ul li {
   padding: 1rem;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -5rem;
+  visibility: hidden;
+}
+
 main {
   margin-top: 5rem;
   display: flex;
@@ -52,32 +67,38 @@ main {
   height: 90vh;
 }
 
-main h1  {
-    display: block;
-    padding: 0 2rem;
-    font-size:2.5rem;
-    color: black;
+main h1 {
+  display: block;
+  padding: 0 2rem;
+  font-size: 2.5rem;
+  color: black;
 }
 
 #Gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: rgb(178, 201, 202);
-  
 }
 
-#Gallery h1 {
+#OurTeam {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: rgb(134, 209, 155);
+}
+
+#Gallery h1,
+#OurTeam h1 {
   width: 100%;
   margin: 2.5rem 0;
-  font-size:2.5rem;
+  font-size: 2.5rem;
   color: black;
   text-align: center;
- 
 }
 
-#Gallery div {
+#Gallery div,
+#OurTeam div {
   max-width: 25rem;
   min-width: 18rem;
   border-radius: 5px;
@@ -87,12 +108,25 @@ main h1  {
   margin: 2rem 2rem;
 }
 
-
-#Gallery div img {
+#Gallery div img,
+#OurTeam div img {
   width: 100%;
 }
 
-#Gallery div h2 {
+#Gallery div h2,
+#OurTeam div h2 {
   margin-top: 1rem;
+  font-size: 1.2rem;
   text-align: left;
+  padding: 0 0.5rem;
+}
+
+footer {
+  background-color: rgb(182, 53, 53);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 0 2rem;
 }
