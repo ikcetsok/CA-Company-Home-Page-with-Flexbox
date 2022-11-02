@@ -51,6 +51,20 @@ nav ul li {
   padding: 1rem;
 }
 
+@media only screen and (max-width:930px){
+  .title{
+    font-size:1.5rem;
+  }
+}
+
+
+@media only screen and (max-width:850px){
+  .title{
+    display:none;
+  }
+}
+
+
 a.anchor {
   display: block;
   position: relative;
